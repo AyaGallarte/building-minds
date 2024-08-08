@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <Router basename="/buildingminds">
+      <Router>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
