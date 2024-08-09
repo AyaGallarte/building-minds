@@ -59,7 +59,7 @@ export default function Home() {
                         <Nav className="me-auto">
                             <Nav.Link href="#home">HOME</Nav.Link>
                             <Nav.Link href="#categories">CATEGORIES</Nav.Link>
-                            <Nav.Link href="#featured">FEATURED</Nav.Link>
+                            <Nav.Link href="#featured-section">FEATURED</Nav.Link>
                             <Nav.Link href="#resources">RESOURCES</Nav.Link>
                             <Nav.Link href="#about">ABOUT</Nav.Link>                   
                         </Nav>                   
@@ -73,19 +73,20 @@ export default function Home() {
                 <div className="content-wrapper">
                     <div id="introduction">
                         <Row>
-                            <Col lg={4} xs={12} className="order-xs-1 order-lg-1">
-                                <h1>Providing high-quality learning materials to children, anywhere.</h1>
+                            <Col lg={4} xs={12} className="intro-caption order-xs-1 order-lg-1">
+                                <h1>Providing high-quality learning materials to children, anywhere. Filling in gaps in their understanding and then accelerating their learning.</h1>
                             </Col>
                             <Col lg={8} xs={12} className="order-xs-2 order-lg-2">
                                 <img src={learn13} className="d-block img-fluid" alt="Introduction Image" />
                             </Col>
                         </Row>
                     </div>
+
+                    <h1 className="featured-caption" id="featured-section">Featured Section</h1>
                     <div id="featured" className="container-cards">
-                        <h1 className="featured-caption">Featured Section</h1>
                         <Row className="g-4">
                           {cardData.map((card) => (
-                            <Col key={card.id} lg={3} xs={12} className="mb-4">
+                            <Col key={card.id} lg={3} xs={12}>
                               <Card className="card h-100">
                                 <Card.Img 
                                   variant="top" 
@@ -193,7 +194,7 @@ export default function Home() {
             <h5 id="mission">Our Mission</h5>
                 <p>The mission of Building Minds is to be a dynamic provider of quality educational products and services.
                     We strive to meet the specific needs of the marketplace in a unique and progressive manner,
-                    and are committed to excellence and employee growth and development.</p>
+                   and are committed to excellence and employee growth and development.</p>
             <h5 id="contact">Contact Us</h5>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
