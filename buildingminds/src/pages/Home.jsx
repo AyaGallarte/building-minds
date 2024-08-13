@@ -188,7 +188,6 @@ export default function Home() {
             </div>
         </section>
 
-
         <section id="about">
             <h1>About Us</h1>
             <h5 id="mission">Our Mission</h5>
@@ -200,8 +199,7 @@ export default function Home() {
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
             <p>&copy; {new Date().getFullYear()}. All Rights Reserved.</p>
-        </section>
-        
+        </section>        
         </>
     );
 }
