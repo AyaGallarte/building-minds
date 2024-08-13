@@ -55,7 +55,7 @@ export default function Home() {
                         />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className="navToggle" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav className="me-auto">
                             <Nav.Link href="#home">HOME</Nav.Link>
                             <Nav.Link href="#categories">CATEGORIES</Nav.Link>
@@ -74,7 +74,7 @@ export default function Home() {
                     <div id="introduction">
                         <Row>
                             <Col lg={4} xs={12} className="intro-caption order-xs-1 order-lg-1">
-                                <h1>Providing high-quality learning materials to children, anywhere. Filling in gaps in their understanding and then accelerating their learning.</h1>
+                                <h1>Bridging gaps in children's understanding to accelerate their learning and development.</h1>
                             </Col>
                             <Col lg={8} xs={12} className="order-xs-2 order-lg-2">
                                 <img src={learn13} className="d-block img-fluid" alt="Introduction Image" />
